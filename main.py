@@ -11,7 +11,7 @@ def get_image():
     img_url = \
         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Mount_Fuji_from_Mount_Aino.jpg/640px-Mount_Fuji_from_Mount_Aino.jpg'
 
-    im = imread(img_url))
+    im = imread(img_url)
 
     st.image(
         im,
@@ -51,9 +51,7 @@ def show_color_selector(hist_red, hist_green, hist_blue):
     if color == 'G':
         df_hist = pd.DataFrame(hist_green)
         st.bar_chart(df_hist)
-    if color == 'B':
-        df_hist = pd.DataFrame(hist_blue)
-        st.bar_chart(df_hist)
+
 
 
 def main():
